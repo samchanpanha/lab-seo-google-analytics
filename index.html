@@ -1,42 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--     Define keywords for search engines -->
-    <meta name="keywords" content="sam chanpanha, panha,sam,chanpanha,seo,google" />
-    <!--     Define a description of your web page -->
-    <meta name="description" content="Duplicate 1: Go ahead, write some content to generate multi-leveled navigation that...
-    Duplicate 2: Slugged navigation and internal links are important in search engine o...
-    Duplicate 3: Personally I don't read full blog posts, but I might if there was a su..." />
-    <!--     Refresh document every 30 seconds -->
-    <meta http-equiv="refresh" content="30">
-    <meta name="subject" content="sam chanpanha">
-    <meta name="copyright" content="sam chanpanha">
-    <meta name="language" content="EN">
-    <meta name="robots" content="index,follow, noindex, nofollow, none" />
-    <meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm" />
-    <meta name="abstract" content="">
-    <meta name="topic" content="">
-    <meta name="summary" content="">
-    <meta name="Classification" content="Business">
-    <!--     Define the author of a page -->
-    <meta name="author" content="samchanpanha, samchanpanha2020@gmail.com">
-    <meta name="designer" content="">
-    <meta name="reply-to" content="samchanpanha2020@gmail.com">
-    <meta name="owner" content="">
-    <meta name="url" content="https://samchanpanha.github.io/lab-seo-google-analytics/">
-    <meta name="identifier-URL" content="https://samchanpanha.github.io/lab-seo-google-analytics/">
-    <meta name="directory" content="submission">
-    <meta name="category" content="">
-    <meta name="coverage" content="Worldwide">
-    <meta name="distribution" content="Global">
-    <meta name="rating" content="General">
-    <meta name="revisit-after" content="7 days">
-    <meta http-equiv="Expires" content="0">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Cache-Control" content="no-cache">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <meta http-equiv="Content-Language" content="EN-GB">
+  <meta charset="UTF-8">
+  <meta name="description" content="the Royal University of Phnom Penh – the oldest and largest University in Cambodia—whose history dates back to 1960">
+  <meta name="keywords" content="Computer science, IT center , education master">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal University of Phnom Penh</title>
     <title>SEO</title>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9J07P0NBPF"></script>
@@ -50,7 +21,12 @@
   
     gtag('config', 'G-9J07P0NBPF');
   </script>
-<h1>BASIC META TAGS</h1>
+ <a href="http://www.rupp.edu.kh/logo/rupp_logo.png" title="" target="_BLANK"><img alt="" src="http://rupp.edu.kh/images/rupp-logo.png"></a> 
+    
+ <div id="text">
+     <h1 class="khmer">សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ</h1>				
+     <h2 class="english">ROYAL UNIVERSITY OF PHNOM PENH </h2>		 
+ </div>
 <div class="grid content">
   <div class="col-3_sm-6 content__sidebar">
     <nav class="content__sidebar-inner">
@@ -78,67 +54,6 @@
     <h4>Content Scoping 2</h4>
   </div>
 </div>
-<script>
-    function addLinksToTOC() {
-  var content = document.querySelectorAll(".content__inner")[0];
-  var toc = document.getElementById("table-of-contents");
-  var headings = content.querySelectorAll("h2, h3, h4, h5, h6");
-  var tocItems;
-  var prevLevel = false;
-  var parentEl = toc;
-  var prevEl = parentEl;
-  for (var i = 0, l = headings.length; i < l; i++) {
-    var heading = headings[i];
-    var text = heading.childNodes[0].nodeValue;
-    var slug = slugify(text);
-    heading.id = slug;
-    tocItems = toc.getElementsByTagName("li");
 
-    var level = parseInt(heading.tagName.replace(/\D/g, ''));
-    if (prevLevel) {
-      if (level > prevLevel) {
-        var ul = document.createElement("ul");
-        tocItems[tocItems.length - 1].appendChild(ul);
-        parentEl = ul;
-        prevEl = tocItems[tocItems.length - 1].parentElement;
-      } else if (level < prevLevel) {
-        parentEl = prevEl;
-      }
-    }
-    prevLevel = level;
-
-    var li = document.createElement("li");
-    var a = document.createElement("a");
-    var aText = document.createTextNode(text);
-    a.href = "#" + heading.id;
-    a.appendChild(aText);
-    li.appendChild(a);
-    parentEl.appendChild(li);
-  }
-}
-
-function initTableOfContents() {
-
-  if ($("#table-of-contents").length > 0) {
-
-    addLinksToTOC();
-
-  }
-
-}
-
-
-function slugify(text) {
-  return text.toString().toLowerCase()
-    .replace(/\s+/g, '-') // Replace spaces with -
-    .replace(/[^\w\-]+/g, '') // Remove all non-word chars
-    .replace(/\-\-+/g, '-') // Replace multiple - with single -
-    .replace(/^-+/, '') // Trim - from start of text
-    .replace(/-+$/, ''); // Trim - from end of text
-}
-
-
-initTableOfContents();
-</script>
 </body>
 </html>
